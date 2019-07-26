@@ -1,4 +1,4 @@
-module.exports = async function (context, req) {
+module.exports = function (context, req) {
 
     context.log('JavaScript HTTP trigger function processed a request.');
     var urlLinks = new Array();
