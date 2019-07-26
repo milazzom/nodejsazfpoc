@@ -19,7 +19,6 @@
         "type": "blob",
         "name": "outputblob",
         "path": "outcontainer/{rand-guid}",
-        "connection": "AzureWebJobsStorage",
         "direction": "out"
       }
     ],
