@@ -39,6 +39,7 @@ module.exports = async function (context, req) {
                     body: "Hello Bob" + it
                 };
                 context.bindings.outputblob = it;
+                console.log("Setting output binding");
                 context.done(null, { outputblob: it });
                 // var it = JSON.stringify(urlLinks)
                 console.log(it)
