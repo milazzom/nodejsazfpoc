@@ -43,6 +43,7 @@ module.exports = function (context, req) {
 
                 // var it = JSON.stringify(urlLinks)
                 console.log(it)
+                context.done();
                 // writer.write(it)
 
             }
