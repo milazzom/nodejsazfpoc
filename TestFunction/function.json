@@ -18,8 +18,8 @@
       {
         "type": "blob",
         "name": "outputblob",
-        "path": "outcontainer/{rand-guid}",
-        "connection": "",
+        "path": "outcontainer/{rand-guid}.json",
+        "connection": "AzureWebJobsStorage",
         "direction": "out"
       }
     ],
