@@ -38,9 +38,9 @@ module.exports = async function (context, req) {
                     status: 200, /* Defaults to 200 */
                     body: "Hello Bob" + it
                 };
-                context.bindings.outputblob = it;
                 console.log("Setting output binding");
-                context.done(null, { outputblob: it });
+                context.bindings.outputblob = it;
+
                 // var it = JSON.stringify(urlLinks)
                 console.log(it)
                 // writer.write(it)
