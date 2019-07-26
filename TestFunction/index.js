@@ -1,7 +1,7 @@
 module.exports = async function (context, req) {
 
     context.log('JavaScript HTTP trigger function processed a request.');
-
+    let urlLinks = [];
     if (req.query.name || (req.body && req.body.name)) {
         const rp = require('request-promise');
 
@@ -11,13 +11,16 @@ module.exports = async function (context, req) {
 
        rp(URL)
         .then(function (html) {
+            context.log("Requested data received.");
             $('.jfp3ef', html).each((index, value) => {
                 var link = $(value).children().attr('href')
+                context.log("Link value: " + link);
                 if (typeof (link) === 'string') {
                     var it = link.split('/url?q=')[1]
                     urlLinks.push(it)
                 }
             })
+            context.log("Number of links: " + urlLinks.length);
 
         }).then(data => {
             console.log("content length = ", urlLinks.length)
