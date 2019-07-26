@@ -1,7 +1,7 @@
 module.exports = async function (context, req) {
 
     context.log('JavaScript HTTP trigger function processed a request.');
-    let urlLinks = [];
+    var urlLinks = new Array();
     if (req.query.name || (req.body && req.body.name)) {
         const rp = require('request-promise');
 
