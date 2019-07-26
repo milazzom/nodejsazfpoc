@@ -27,7 +27,7 @@ module.exports = async function (context, req) {
 
             context.res = {
                 status: 200, /* Defaults to 200 */
-                body: "Hello Bob" + JSON.stringify(urlLinks);
+                body: "Hello Bob" + JSON.stringify(urlLinks)
             };
             if (urlLinks.length > 0) {
                 // content.forEach((it, index) => {
