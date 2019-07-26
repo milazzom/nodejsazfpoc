@@ -22,5 +22,6 @@
         "connection": "AzureWebJobsStorage",
         "direction": "out"
       }
-    ]
+    ],
+    "disabled": false
   }
