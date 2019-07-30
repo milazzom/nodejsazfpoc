@@ -3,7 +3,7 @@
     "Values": {
       "FUNCTIONS_WORKER_RUNTIME": "node",
       "AzureWebJobsStorage": "{AzureWebJobsStorage}",
-      "QueueConnString": "***REMOVED***"
+      "QueueConnString": "DefaultEndpointsProtocol=https;AccountName=httptestba4e;AccountKey=lbVGb4BTF1G58M2gLKRCNRis83mti0rssFNbXiytbSL684hzboLXmPZ0EKMILvpmMdzMNNfuSlhjkc85ieeWjA==;EndpointSuffix=core.usgovcloudapi.net"
     }
   }
   
